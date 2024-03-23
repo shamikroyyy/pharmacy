@@ -1,0 +1,314 @@
+﻿@model PharmacyManagementSystem.Models.PMSSeller
+
+
+ 
+@{
+
+    ViewBag.Title = "Index";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+ 
+}
+ 
+@using (Html.BeginForm("Save", "PMSSellers", FormMethod.Post))
+
+{
+
+    <div class="container-fluid">
+
+        <div class="row md-5">
+
+            <!--row mt-5-->
+
+            <div class="col-md-4">
+
+                <div class="row mb-3">
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.HiddenFor(model => model.SelId, new { htmlAttributes = new { @class = "form-control" } })
+
+                            @Html.LabelFor(model => model.SelName, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.SelName, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.SelName, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.SelEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.SelEmail, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.SelEmail, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.SelPwd, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.SelPwd, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.SelPwd, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.SelDOB, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.SelDOB, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.SelDOB, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+ 
+                </div>
+
+                <div class="row mb-3">
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.SelGen, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.SelGen, new { htmlAttributes = new { @class = "form-control" } })
+
+                            </div>
+
+                        </div>
+
+                        <!--<div class="dropdown">
+
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    Select Your Gender
+
+                        </button>
+
+                        <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="#">Male</a></li>
+
+                        <li><a class="dropdown-item" href="#">Female</a></li>
+
+                        </ul>
+
+                        </div>-->
+
+                        <!--<input type="text" class="form-control" placeholder="Gender" aria-label="First name">-->
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.SelAdd, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.SelAdd, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.SelAdd, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col d-grid">
+
+                        <input type="submit" value="Edit" class="btn btn-success btn-block" formaction="@Url.Action("Edit")" formmethod="post" />
+
+                    </div>
+
+                    <div class="col d-grid">
+
+                        <input type="submit" value="Save" class="btn btn-primary btn-block" />
+
+                    </div>
+
+                    <div class="col d-grid">
+
+                        <input type="submit" value="Delete" class="btn btn-danger btn-block" formaction="@Url.Action("Delete")" formmethod="post" />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-8">
+
+                <h2>Seller List</h2>
+
+                <GridView id="MedicineList" class="table" runat="server">
+
+                    <table class="table">
+
+                        <tr>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.SelId)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.SelName)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.SelEmail)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.SelPwd)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.SelDOB)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.SelGen)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.SelAdd)
+
+                            </th>
+
+                            <th></th>
+
+                        </tr>
+ 
+                        @foreach (var item in Model.SelDetails)
+
+                        {
+
+                            <tr>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.SelId)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.SelName)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.SelEmail)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.SelPwd)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.SelDOB)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.SelGen)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.SelAdd)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.ActionLink("Choose", "Index", new { id = item.SelId })
+
+                                </td>
+
+                            </tr>
+
+                        }
+ 
+                    </table>
+
+                </GridView>
+
+            </div>
+
+        </div>
+
+    </div>
+
+}
+

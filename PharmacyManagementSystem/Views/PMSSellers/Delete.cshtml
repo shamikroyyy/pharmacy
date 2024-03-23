@@ -1,0 +1,72 @@
+﻿@model PharmacyManagementSystem.Models.PMSSeller
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PMSSeller</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelPwd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelPwd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelDOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelDOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelGen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelGen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelAdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelAdd)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

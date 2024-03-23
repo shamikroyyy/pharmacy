@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|c:\\users\\2318135\\pharmacy management system\\pharmacymanagementsystem\\pharmacymanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|solutionrelative:pharmacymanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|c:\\users\\2318135\\pharmacy management system\\pharmacymanagementsystem\\pharmacymanagementsystem\\views\\home\\loginasadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|solutionrelative:pharmacymanagementsystem\\views\\home\\loginasadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|c:\\users\\2318135\\pharmacy management system\\pharmacymanagementsystem\\pharmacymanagementsystem\\views\\home\\loginasseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|solutionrelative:pharmacymanagementsystem\\views\\home\\loginasseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|c:\\users\\2318135\\pharmacy management system\\pharmacymanagementsystem\\pharmacymanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|solutionrelative:pharmacymanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|c:\\users\\2318135\\pharmacy management system\\pharmacymanagementsystem\\pharmacymanagementsystem\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|solutionrelative:pharmacymanagementsystem\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|c:\\users\\2318135\\pharmacy management system\\pharmacymanagementsystem\\pharmacymanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|solutionrelative:pharmacymanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|c:\\users\\2318135\\pharmacy management system\\pharmacymanagementsystem\\pharmacymanagementsystem\\controllers\\pmsbillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|solutionrelative:pharmacymanagementsystem\\controllers\\pmsbillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|c:\\users\\2318135\\pharmacy management system\\pharmacymanagementsystem\\pharmacymanagementsystem\\views\\pmsbills\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BF1E72DA-16CA-4135-A2A7-C02AE9952D8C}|PharmacyManagementSystem\\PharmacyManagementSystem.csproj|solutionrelative:pharmacymanagementsystem\\views\\pmsbills\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PharmacyManagementSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PharmacyManagementSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAmwDgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T06:34:24.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "PharmacyManagementSystem\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "PharmacyManagementSystem\\Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T06:23:57.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LogInAsAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Home\\LogInAsAdmin.cshtml",
+              "RelativeDocumentMoniker": "PharmacyManagementSystem\\Views\\Home\\LogInAsAdmin.cshtml",
+              "ToolTip": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Home\\LogInAsAdmin.cshtml",
+              "RelativeToolTip": "PharmacyManagementSystem\\Views\\Home\\LogInAsAdmin.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAD8AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T05:58:07.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PMSBillsController.cs",
+              "DocumentMoniker": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Controllers\\PMSBillsController.cs",
+              "RelativeDocumentMoniker": "PharmacyManagementSystem\\Controllers\\PMSBillsController.cs",
+              "ToolTip": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Controllers\\PMSBillsController.cs",
+              "RelativeToolTip": "PharmacyManagementSystem\\Controllers\\PMSBillsController.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAQwFkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T05:36:54.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PharmacyManagementSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PharmacyManagementSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T04:15:59.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\PMSBills\\Index.cshtml",
+              "RelativeDocumentMoniker": "PharmacyManagementSystem\\Views\\PMSBills\\Index.cshtml",
+              "ToolTip": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\PMSBills\\Index.cshtml",
+              "RelativeToolTip": "PharmacyManagementSystem\\Views\\PMSBills\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T04:14:34.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PharmacyManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PharmacyManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAA0AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T04:05:54.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogInAsSeller.cshtml",
+              "DocumentMoniker": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Home\\LogInAsSeller.cshtml",
+              "RelativeDocumentMoniker": "PharmacyManagementSystem\\Views\\Home\\LogInAsSeller.cshtml",
+              "ToolTip": "C:\\Users\\2318135\\Pharmacy Management System\\PharmacyManagementSystem\\PharmacyManagementSystem\\Views\\Home\\LogInAsSeller.cshtml",
+              "RelativeToolTip": "PharmacyManagementSystem\\Views\\Home\\LogInAsSeller.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-14T18:32:21.949Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

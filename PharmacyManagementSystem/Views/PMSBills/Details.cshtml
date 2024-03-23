@@ -1,0 +1,42 @@
+﻿@model PharmacyManagementSystem.Models.PMSBill
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PMSBill</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BillDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BillDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BillId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

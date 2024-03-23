@@ -1,0 +1,15 @@
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\PharmaUnit.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\PharmaUnit.pdb
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\obj\Debug\PharmaUnit.csproj.AssemblyReference.cache
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\obj\Debug\PharmaUnit.csproj.CoreCompileInputs.cache
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\obj\Debug\PharmaUnit.csproj.Up2Date
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\obj\Debug\PharmaUnit.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaUnit\obj\Debug\PharmaUnit.pdb

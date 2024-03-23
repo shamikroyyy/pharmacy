@@ -1,0 +1,12 @@
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\bin\Debug\PharmaLibrary.dll.config
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\bin\Debug\PharmaLibrary.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\bin\Debug\PharmaLibrary.pdb
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\bin\Debug\EntityFramework.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\bin\Debug\EntityFramework.xml
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\obj\Debug\PharmaLibrary.csproj.AssemblyReference.cache
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\obj\Debug\PharmaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\obj\Debug\PharmaLi.E01411B1.Up2Date
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\obj\Debug\PharmaLibrary.dll
+C:\Users\2318135\Pharmacy Management System\PharmacyManagementSystem\PharmaLibrary\obj\Debug\PharmaLibrary.pdb

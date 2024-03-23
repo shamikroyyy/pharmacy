@@ -1,0 +1,66 @@
+﻿@model PharmacyManagementSystem.Models.PMSSeller
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PMSSeller</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelPwd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelPwd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelDOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelDOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelGen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelGen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelAdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelAdd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

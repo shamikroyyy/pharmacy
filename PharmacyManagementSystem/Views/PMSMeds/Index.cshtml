@@ -1,0 +1,276 @@
+﻿@model PharmacyManagementSystem.Models.PMSMed
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+@using (Html.BeginForm("Save", "PMSMeds", FormMethod.Post))
+
+{
+
+    <div class="container-fluid">
+
+        <div class="row md-5">
+
+            <div class="col-md-4">
+
+                <div class="row mb-3">
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.MedCode, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.MedCode, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.MedCode, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.MedName, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.MedName, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.MedName, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.MedPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.MedPrice, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.MedPrice, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.MedStock, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.MedStock, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.MedStock, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.MedExpDate, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.MedExpDate, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.MedExpDate, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.MedCategory, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                            <div class="col-md-10">
+
+                                @Html.EditorFor(model => model.MedCategory, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(model => model.MedCategory, "", new { @class = "text-danger" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col d-grid">
+
+                        <input type="submit" id="EditBtn" value="Edit" class="btn btn-success btn-block" formaction="@Url.Action("Edit")" formmethod="post" />
+
+                    </div>
+
+                    <div class="col d-grid">
+
+                        <input type="submit" id="SaveBtn" value="Save" class="btn btn-primary btn-block" />
+
+                    </div>
+
+                    <div class="col d-grid">
+
+                        <input type="submit" id="DeleteBtn" value="Delete" class="btn btn-danger btn-block" formaction="@Url.Action("Delete")" formmethod="post" />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-8">
+
+                <h2>Medicines List</h2>
+
+                <GridView class="table">
+
+                    <table class="table">
+
+                        <tr>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.MedCode)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.MedName)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.MedPrice)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.MedStock)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.MedExpDate)
+
+                            </th>
+
+                            <th>
+
+                                @Html.DisplayNameFor(model => model.MedCategory)
+
+                            </th>
+
+                            <th></th>
+
+                        </tr>
+
+                        @foreach (var item in Model.MedDetails)
+
+                        {
+
+                            <tr>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.MedCode)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.MedName)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.MedPrice)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.MedStock)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.MedExpDate)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.DisplayFor(modelItem => item.MedCategory)
+
+                                </td>
+
+                                <td>
+
+                                    @Html.ActionLink("Choose", "Index", new { id = item.MedCode })
+
+                                </td>
+
+                            </tr>
+
+                        }
+
+                    </table>
+
+                </GridView>
+
+            </div>
+
+        </div>
+
+    </div>
+
+}

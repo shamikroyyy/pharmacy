@@ -1,0 +1,68 @@
+﻿@model PharmacyManagementSystem.Models.PMSCat
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Save", "PMSCats", FormMethod.Post))
+{
+    <div class="container-fluid">
+        <div class="row md-5">
+            <div class="col-md-4">
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-group">
+                            @Html.HiddenFor(model => model.CatId, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.LabelFor(model => model.CatName, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.CatName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.CatName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-grid">
+                        <input type="submit" id="EditBtn" value="Edit" class="btn btn-success btn-block" formaction="@Url.Action("Edit")" formmethod="post" />
+                    </div>
+                    <div class="col d-grid">
+                        <input type="submit" id="SaveBtn" value="Save" class="btn btn-primary btn-block" />
+                    </div>
+                    <div class="col d-grid">
+                        <input type="submit" id="DeleteBtn" value="Delete" class="btn btn-danger btn-block" formaction="@Url.Action("Delete")" formmethod="post" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <h2>Categories List</h2>
+                <GridView id="CategoryList" class="table" runat="server">
+                    <table class="table">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CatId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CatName)
+                            </th>
+                        </tr>
+                        @foreach (var item in Model.CatDetails)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CatId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CatName)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Choose", "Index", new { id = item.CatId })
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                </GridView>
+            </div>
+        </div>
+    </div>
+}

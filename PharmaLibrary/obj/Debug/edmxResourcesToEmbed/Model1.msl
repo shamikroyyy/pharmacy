@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="pharmacyModelStoreContainer" CdmEntityContainer="pharmacyEntities">
+    <EntitySetMapping Name="Billing_details">
+      <EntityTypeMapping TypeName="pharmacyModel.Billing_details">
+        <MappingFragment StoreEntitySet="Billing_details">
+          <ScalarProperty Name="BillId" ColumnName="BillId" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="Seller" ColumnName="Seller" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category_details">
+      <EntityTypeMapping TypeName="pharmacyModel.Category_details">
+        <MappingFragment StoreEntitySet="Category_details">
+          <ScalarProperty Name="CatId" ColumnName="CatId" />
+          <ScalarProperty Name="CatName" ColumnName="CatName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Med_details">
+      <EntityTypeMapping TypeName="pharmacyModel.Med_details">
+        <MappingFragment StoreEntitySet="Med_details">
+          <ScalarProperty Name="MedCode" ColumnName="MedCode" />
+          <ScalarProperty Name="MedName" ColumnName="MedName" />
+          <ScalarProperty Name="MedPrice" ColumnName="MedPrice" />
+          <ScalarProperty Name="MedStock" ColumnName="MedStock" />
+          <ScalarProperty Name="MedExpDate" ColumnName="MedExpDate" />
+          <ScalarProperty Name="MedCategory" ColumnName="MedCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seller_details">
+      <EntityTypeMapping TypeName="pharmacyModel.Seller_details">
+        <MappingFragment StoreEntitySet="Seller_details">
+          <ScalarProperty Name="SelId" ColumnName="SelId" />
+          <ScalarProperty Name="SelName" ColumnName="SelName" />
+          <ScalarProperty Name="SelEmail" ColumnName="SelEmail" />
+          <ScalarProperty Name="SelPwd" ColumnName="SelPwd" />
+          <ScalarProperty Name="SelDOB" ColumnName="SelDOB" />
+          <ScalarProperty Name="SelGen" ColumnName="SelGen" />
+          <ScalarProperty Name="SelAdd" ColumnName="SelAdd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

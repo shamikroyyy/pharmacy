@@ -1,0 +1,64 @@
+﻿@model PharmacyManagementSystem.Models.PMSMed
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PMSMed</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MedName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedStock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedStock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedExpDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedExpDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedCategory)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

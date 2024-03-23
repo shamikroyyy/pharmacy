@@ -1,0 +1,58 @@
+﻿@model PharmacyManagementSystem.Models.PMSMed
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PMSMed</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MedName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedStock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedStock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedExpDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedExpDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedCategory)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MedCode }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

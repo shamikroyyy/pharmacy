@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="pharmacyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Billing_details">
+          <Key>
+            <PropertyRef Name="BillId" />
+          </Key>
+          <Property Name="BillId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BillDate" Type="date" Nullable="false" />
+          <Property Name="Seller" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category_details">
+          <Key>
+            <PropertyRef Name="CatId" />
+          </Key>
+          <Property Name="CatId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CatName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Med_details">
+          <Key>
+            <PropertyRef Name="MedCode" />
+          </Key>
+          <Property Name="MedCode" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MedName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MedPrice" Type="int" Nullable="false" />
+          <Property Name="MedStock" Type="int" Nullable="false" />
+          <Property Name="MedExpDate" Type="date" Nullable="false" />
+          <Property Name="MedCategory" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Seller_details">
+          <Key>
+            <PropertyRef Name="SelId" />
+          </Key>
+          <Property Name="SelId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SelName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SelEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SelPwd" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SelDOB" Type="date" Nullable="false" />
+          <Property Name="SelGen" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SelAdd" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Billing_details_Seller_details">
+          <End Role="Seller_details" Type="Self.Seller_details" Multiplicity="1" />
+          <End Role="Billing_details" Type="Self.Billing_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seller_details">
+              <PropertyRef Name="SelId" />
+            </Principal>
+            <Dependent Role="Billing_details">
+              <PropertyRef Name="Seller" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Med_details_Category_details">
+          <End Role="Category_details" Type="Self.Category_details" Multiplicity="1" />
+          <End Role="Med_details" Type="Self.Med_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category_details">
+              <PropertyRef Name="CatId" />
+            </Principal>
+            <Dependent Role="Med_details">
+              <PropertyRef Name="MedCategory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="pharmacyModelStoreContainer">
+          <EntitySet Name="Billing_details" EntityType="Self.Billing_details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category_details" EntityType="Self.Category_details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Med_details" EntityType="Self.Med_details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Seller_details" EntityType="Self.Seller_details" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Billing_details_Seller_details" Association="Self.FK_Billing_details_Seller_details">
+            <End Role="Seller_details" EntitySet="Seller_details" />
+            <End Role="Billing_details" EntitySet="Billing_details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Med_details_Category_details" Association="Self.FK_Med_details_Category_details">
+            <End Role="Category_details" EntitySet="Category_details" />
+            <End Role="Med_details" EntitySet="Med_details" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="pharmacyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Billing_details">
+          <Key>
+            <PropertyRef Name="BillId" />
+          </Key>
+          <Property Name="BillId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BillDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Seller" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Seller_details" Relationship="Self.FK_Billing_details_Seller_details" FromRole="Billing_details" ToRole="Seller_details" />
+        </EntityType>
+        <EntityType Name="Category_details">
+          <Key>
+            <PropertyRef Name="CatId" />
+          </Key>
+          <Property Name="CatId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CatName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Med_details" Relationship="Self.FK_Med_details_Category_details" FromRole="Category_details" ToRole="Med_details" />
+        </EntityType>
+        <EntityType Name="Med_details">
+          <Key>
+            <PropertyRef Name="MedCode" />
+          </Key>
+          <Property Name="MedCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MedName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MedPrice" Type="Int32" Nullable="false" />
+          <Property Name="MedStock" Type="Int32" Nullable="false" />
+          <Property Name="MedExpDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="MedCategory" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Category_details" Relationship="Self.FK_Med_details_Category_details" FromRole="Med_details" ToRole="Category_details" />
+        </EntityType>
+        <EntityType Name="Seller_details">
+          <Key>
+            <PropertyRef Name="SelId" />
+          </Key>
+          <Property Name="SelId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SelName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SelEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SelPwd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SelDOB" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="SelGen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SelAdd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Billing_details" Relationship="Self.FK_Billing_details_Seller_details" FromRole="Seller_details" ToRole="Billing_details" />
+        </EntityType>
+        <Association Name="FK_Billing_details_Seller_details">
+          <End Role="Seller_details" Type="Self.Seller_details" Multiplicity="1" />
+          <End Role="Billing_details" Type="Self.Billing_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seller_details">
+              <PropertyRef Name="SelId" />
+            </Principal>
+            <Dependent Role="Billing_details">
+              <PropertyRef Name="Seller" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Med_details_Category_details">
+          <End Role="Category_details" Type="Self.Category_details" Multiplicity="1" />
+          <End Role="Med_details" Type="Self.Med_details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category_details">
+              <PropertyRef Name="CatId" />
+            </Principal>
+            <Dependent Role="Med_details">
+              <PropertyRef Name="MedCategory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="pharmacyEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Billing_details" EntityType="Self.Billing_details" />
+          <EntitySet Name="Category_details" EntityType="Self.Category_details" />
+          <EntitySet Name="Med_details" EntityType="Self.Med_details" />
+          <EntitySet Name="Seller_details" EntityType="Self.Seller_details" />
+          <AssociationSet Name="FK_Billing_details_Seller_details" Association="Self.FK_Billing_details_Seller_details">
+            <End Role="Seller_details" EntitySet="Seller_details" />
+            <End Role="Billing_details" EntitySet="Billing_details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Med_details_Category_details" Association="Self.FK_Med_details_Category_details">
+            <End Role="Category_details" EntitySet="Category_details" />
+            <End Role="Med_details" EntitySet="Med_details" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="pharmacyModelStoreContainer" CdmEntityContainer="pharmacyEntities">
+          <EntitySetMapping Name="Billing_details">
+            <EntityTypeMapping TypeName="pharmacyModel.Billing_details">
+              <MappingFragment StoreEntitySet="Billing_details">
+                <ScalarProperty Name="BillId" ColumnName="BillId" />
+                <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+                <ScalarProperty Name="Seller" ColumnName="Seller" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Category_details">
+            <EntityTypeMapping TypeName="pharmacyModel.Category_details">
+              <MappingFragment StoreEntitySet="Category_details">
+                <ScalarProperty Name="CatId" ColumnName="CatId" />
+                <ScalarProperty Name="CatName" ColumnName="CatName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Med_details">
+            <EntityTypeMapping TypeName="pharmacyModel.Med_details">
+              <MappingFragment StoreEntitySet="Med_details">
+                <ScalarProperty Name="MedCode" ColumnName="MedCode" />
+                <ScalarProperty Name="MedName" ColumnName="MedName" />
+                <ScalarProperty Name="MedPrice" ColumnName="MedPrice" />
+                <ScalarProperty Name="MedStock" ColumnName="MedStock" />
+                <ScalarProperty Name="MedExpDate" ColumnName="MedExpDate" />
+                <ScalarProperty Name="MedCategory" ColumnName="MedCategory" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Seller_details">
+            <EntityTypeMapping TypeName="pharmacyModel.Seller_details">
+              <MappingFragment StoreEntitySet="Seller_details">
+                <ScalarProperty Name="SelId" ColumnName="SelId" />
+                <ScalarProperty Name="SelName" ColumnName="SelName" />
+                <ScalarProperty Name="SelEmail" ColumnName="SelEmail" />
+                <ScalarProperty Name="SelPwd" ColumnName="SelPwd" />
+                <ScalarProperty Name="SelDOB" ColumnName="SelDOB" />
+                <ScalarProperty Name="SelGen" ColumnName="SelGen" />
+                <ScalarProperty Name="SelAdd" ColumnName="SelAdd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
